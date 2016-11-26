@@ -47,11 +47,18 @@ namespace testXaf001.Module.BusinessObjects
         //}
 
         private string _ledgerCode;
+        private string _ledgerName;
 
         public string LedgerCode
         {
             get { return _ledgerCode; }
             set { SetPropertyValue("PersistentProperty", ref _ledgerCode, value); }
         }
+        public string LedgeName
+        {
+            get { return _ledgerName; }
+            set { SetPropertyValue("PersistentProperty", ref _ledgerName, value); }
+        }
+
     }
 }
