@@ -1,8 +1,86 @@
-﻿<?xml version="1.0" ?>
-<Application Title="testXaf001" Logo="ExpressAppLogo">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="test Xaf 001" Logo="Action_ChooseSkin" Company="iso holding" Copyright="ismail" Description="ismail test app">
+  <CreatableItems>
+    <CreatableItem ClassName="testXaf001.Module.BusinessObjects.Customer" ImageName="" />
+  </CreatableItems>
+  <NavigationItems NavigationStyle="TreeList" DefaultChildItemsDisplayStyle="List" GenerateRelatedAnalysisGroup="True" GenerateRelatedReportsGroup="True" GenerateRelatedViewVariantsGroup="True" StartupNavigationItem="">
+    <Items>
+      <Item Id="@Customers13940755" Caption="Customers" ToolTip="Customers " Index="0" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Customer_ListView" ViewId="Customer_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Default" Caption="Others" Index="1">
+        <Items>
+          <Item Id="Ben1_ListView" Removed="True" />
+          <Item Id="Customer_ListView" Removed="True" />
+          <Item Id="Event_ListView" Removed="True" />
+          <Item Id="MBELGETIPI_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Index="2" />
+      <Item Id="State Machine" Index="4" />
+      <Item Id="MySetting" Caption="My Setting" Index="8" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Ben1_ListView" ViewId="Ben1_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="LedgerSetup" Caption="LedgerSetup" Index="9" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="MBELGETIPI_ListView" ViewId="MBELGETIPI_ListView" ObjectKey="" Caption="Document Type" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Setup" Caption="Setup" Index="10" IsNewNode="True" />
+      <Item Id="ahmet" Caption="ahmet" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Veli" Caption="veli" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <Options>
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="16.1.7.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="16.1.7.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="16.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Validation>
+    <Contexts>
+      <ValidationContext Id="Accept" AllowInplaceValidation="True" />
+      <ValidationContext Id="Delete" AllowInplaceValidation="True" />
+    </Contexts>
+  </Validation>
   <Views>
+    <DetailView Id="Customer_DetailView" ImageName="BO_Skull">
+      <Items>
+        <PropertyEditor Id="LedgerCode" Index="0" />
+        <PropertyEditor Id="LedgeName" EditMask="999-000-0000" Index="1" />
+        <PropertyEditor Id="Oid" PropertyName="Oid" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <TabbedGroup Id="Item1" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Tab1" IsNewNode="True">
+            <LayoutGroup Id="SimpleEditors" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Customer" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="LedgerCode" ViewItem="LedgerCode" Index="0" RelativeSize="4.2105263157894735" IsNewNode="True" />
+                <LayoutItem Id="LedgeName" ViewItem="LedgeName" Index="1" RelativeSize="3.1578947368421053" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="tab2" ShowCaption="True" CaptionLocation="Top" Direction="Horizontal" Index="1" Caption="Tab2" IsNewNode="True">
+              <LayoutItem Id="FullName" ViewItem="FullName" Index="2" RelativeSize="92.631578947368425" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Customer_ListView" NewItemRowPosition="Bottom" />
+    <ListView Id="MBELGETIPI_ListView" ShowAutoFilterRow="True" IsFooterVisible="True" IsGroupPanelVisible="True" />
   </Views>
 </Application>

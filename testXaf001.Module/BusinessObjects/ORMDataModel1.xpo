@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataBaseObjectModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0af6667c-9422-4a06-9151-c8e89d16c592" dbName="Muhasebe" connectionInfo="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxEZXZFeHByZXNzWHBvR2VuZXJhdG9yU2V0dGluZ3MgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgcHJvdmlkZXJLZXk9Ik1TU3FsU2VydmVyIj4NCiAgPHBhcmFtZXRlcj4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0ic2VydmVyIiB2YWx1ZT0iLiIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0iZGF0YWJhc2UiIHZhbHVlPSJNdWhhc2ViZSIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0idXNlSW50ZWdyYXRlZFNlY3VyaXR5IiB2YWx1ZT0iVHJ1ZSIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0idXNlcmlkIiB2YWx1ZT0iIiAvPg0KICAgIDxDb25uZWN0aW9uUGFnZVNldHRpbmdzSXRlbSBuYW1lPSJwYXNzd29yZCIgdmFsdWU9IiIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0icmVhZCBvbmx5IiB2YWx1ZT0iMSIgLz4NCiAgICA8Q29ubmVjdGlvblBhZ2VTZXR0aW5nc0l0ZW0gbmFtZT0iZ2VuZXJhdGVDb25uZWN0aW9uSGVscGVyIiB2YWx1ZT0idHJ1ZSIgLz4NCiAgPC9wYXJhbWV0ZXI+DQo8L0RldkV4cHJlc3NYcG9HZW5lcmF0b3JTZXR0aW5ncz4=" namespace="testXaf001.Module.BusinessObjects.Muhasebe" connectionString="XpoProvider=MSSqlServer;data source=.;integrated security=SSPI;initial catalog=Muhasebe" dataBaseShemaInfo="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" generateConnectionHelper="true" generateStoredProcedures="true" fieldNameCase="Unchanged" generateDefaultConstructors="false" generateClassesForViews="true" xmlns="http://schemas.microsoft.com/dsltools/ORMDataModel">
+  <comments>
+    <dataBaseObjectModelHasComments Id="3206b310-4a28-439d-b8f5-972d0babd32b">
+      <comment Id="b5aa50dc-9fa8-4397-938a-6ad4e24beb6d" text="The 'PK__MBELGETIPI__440B1D61' index is ignored, because 'BELGETIPI' is a key" name="MBELGETIPIComment">
+        <subjects>
+          <commentReferencesSubjects Id="7786e1f4-40c6-4511-938d-8ed5838955ca">
+            <xpObjectMoniker Id="06a51e90-ac90-48b3-bdd2-0c1a9e7fd1e0" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="6720c86e-71c8-4b7d-93d1-fe93af0961d3">
+      <comment Id="90dde1c7-c604-4a2a-afe7-46a34b2a50d3" text="The 'PK__MFISBAS__B87DC94BD4B36F96' index is ignored, because 'IDNO' is a key" name="MFISBASComment">
+        <subjects>
+          <commentReferencesSubjects Id="6aea2160-a83c-47ee-a106-2f8c05e260e3">
+            <xpObjectMoniker Id="a3e1d144-fe47-423e-9e90-ee87bc1f2018" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="6a8863c3-d5c0-45d4-b11e-aae97f110989">
+      <comment Id="0f3dfc85-41ea-4b20-b7eb-9da2eacfc1c7" text="The 'PK__MFISDET__467FD217B3DB6F27' index is ignored, because 'IDNO' is a key" name="MFISDETComment">
+        <subjects>
+          <commentReferencesSubjects Id="ad8d4f2b-6a66-4d30-b061-9de258dba5f5">
+            <xpObjectMoniker Id="e3bf97cd-5273-481f-8a57-fec4aee0b209" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="53beb01d-55e9-4844-acb6-733f292e1b27">
+      <comment Id="d78706d6-9afe-4402-aa60-b3cb2a497bb3" text="This class is mapped to a database view. To use it as a persistent object, select a property that contains unique values and set Key=True for it, and set NonPersistent=False for this class." name="TNMSZMUHASEBEKODUComment">
+        <subjects>
+          <commentReferencesSubjects Id="f8652435-4214-4390-b905-725ff431feff">
+            <xpObjectMoniker Id="54355255-80f4-4e33-9fa8-503932c101df" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="61332930-0ec5-4241-b582-ade0ff8c752d">
+      <comment Id="4240092d-b975-477f-b0ff-8ccb096ded1b" text="The 'PK__ZDATLST__09DE7BCC' index is ignored, because 'KOD' is a key" name="ZDATLSTComment">
+        <subjects>
+          <commentReferencesSubjects Id="eb6e5146-e445-44fb-a642-563351b53991">
+            <xpObjectMoniker Id="9e4ab8bd-b2a4-4b43-85db-3e220eea54ec" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="1127ce5e-9fa2-4aa3-80a0-adf99e92a08f">
+      <comment Id="fa1ffcb5-31ac-4828-9545-39dc7d2bc58f" text="The 'PK__ZKILIT__15502E78' index is ignored, because 'IDNO' is a key" name="ZKILITComment">
+        <subjects>
+          <commentReferencesSubjects Id="01b17884-d11b-41ce-ae33-7ce347bbfdf5">
+            <xpObjectMoniker Id="d9860a10-dbcd-4ab7-bdc2-59e65cde7c06" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+    <dataBaseObjectModelHasComments Id="746eced1-5965-46c3-a7a3-b37d99850804">
+      <comment Id="d087daeb-2a12-4616-a0f2-f1c9e08685a6" text="The 'PK_ZNUMARA' index is ignored, because 'IDNO' is a key" name="ZNUMARAComment">
+        <subjects>
+          <commentReferencesSubjects Id="718444a8-0df3-4227-996d-b84bf4681b9a">
+            <xpObjectMoniker Id="d118cb0f-5ac9-4b7d-97c3-0df18c56a3d0" />
+          </commentReferencesSubjects>
+        </subjects>
+      </comment>
+    </dataBaseObjectModelHasComments>
+  </comments>
+  <storedProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="a80e6035-2035-4839-95e9-9bcad8fcf6a8">
+      <storedProcedure Id="309b910a-e301-4c48-9a4e-0609e5e02a16" name="SP_C5IDNOAL">
+        <arguments>
+          <storedProcedureHasArguments Id="4850f162-c29d-4741-966a-544f9d1c1681">
+            <argument Id="9dd2223c-72b1-4212-82c2-a2146e3df4ad" name="Tur" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="dd35de6f-f74d-4334-ba18-e2969993b594">
+            <argument Id="b99f5dcf-4656-4024-b35d-12202b639a4d" name="IP" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="b51bb071-e618-43a4-a9e4-d6380b26936d">
+            <argument Id="b9478755-3880-4e65-a79b-c0379ca42da1" name="KL" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="ce46761e-6447-4650-b846-eb79f586f0ef">
+            <argument Id="84558d9e-6963-40e8-93d6-3dbff33254e9" name="GIDNO" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="9e0cfd79-235b-45e6-a5ca-1bfe1150e354">
+      <storedProcedure Id="e4b5e9fd-cbc1-461f-b484-3954c84e239f" name="SP_CONVERTYAP">
+        <arguments>
+          <storedProcedureHasArguments Id="23c31980-2347-4509-a4a2-0cf997a057d9">
+            <argument Id="f8c830b9-0055-4bf6-918e-2b22c3a4bfe4" name="Sql" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+    <dataBaseObjectModelHasStoredProcedures Id="462a1e2a-3547-4eda-bee7-b147d3171292">
+      <storedProcedure Id="800c09f0-28d4-4983-ba0f-33a5dca87bb6" name="SP_IDNOAL">
+        <arguments>
+          <storedProcedureHasArguments Id="0b6a50b2-8cc2-420a-8b58-fca765abdaf5">
+            <argument Id="ef3e2dfd-2ecf-48e6-93de-10457d5e1cee" name="Tur" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="0e38e142-de3e-4c80-8044-c17fb48ce62a">
+            <argument Id="84458bfd-ae10-4b46-b834-d10e66bf2b30" name="IP" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+          <storedProcedureHasArguments Id="7c346127-4261-40fb-a0c2-1c73ca4d8416">
+            <argument Id="2c4bf4f9-3329-46cb-b728-7cf45929ba5d" name="KL" virtualColumnType="String" />
+          </storedProcedureHasArguments>
+        </arguments>
+      </storedProcedure>
+    </dataBaseObjectModelHasStoredProcedures>
+  </storedProcedures>
+  <classes>
+    <dataBaseObjectModelHasClasses Id="171d695d-3677-4405-9bc0-de41e83695c2">
+      <xpObject Id="06a51e90-ac90-48b3-bdd2-0c1a9e7fd1e0" name="MBELGETIPI" baseClass="XPLiteObject" userFileName="MBELGETIPI" designerFileName="MBELGETIPI.Designer" className="MBELGETIPI" virtualBaseClass="XPLiteObject" persistent="MBELGETIPI" virtualName="MBELGETIPI">
+        <fields>
+          <generalXpObjectHasFields Id="7395b019-ed28-4fcd-a4dd-8af92359d336">
+            <field Id="8275c103-9705-441c-bacc-b313b7df3cb3" name="BELGETIPI" key="true" persistent="BELGETIPI" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="9b5cf7e3-f0de-4e72-af4a-9673954a23af">
+            <field Id="e2797772-78cc-459b-91f1-f5bc870652de" name="BELGETIPI_XML" persistent="BELGETIPI_XML" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="9c53b9b0-24d2-414f-a5d1-1791a0dcdba2">
+      <xpObject Id="a3e1d144-fe47-423e-9e90-ee87bc1f2018" name="MFISBAS" baseClass="XPLiteObject" userFileName="MFISBAS" designerFileName="MFISBAS.Designer" className="MFISBAS" virtualBaseClass="XPLiteObject" persistent="MFISBAS" virtualName="MFISBAS">
+        <fields>
+          <generalXpObjectHasFields Id="e59ea74d-4699-414e-9610-1da4164df22e">
+            <field Id="250bd0a7-b94e-4440-bc94-62f7f7941ded" name="IDNO" columnType="Int32" key="true" persistent="IDNO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="63eb0c7f-7886-4660-86c0-4b1c027b2680">
+            <field Id="b82d0f27-7152-4e37-89a8-e2dd30780cfc" name="KEYSTR" persistent="KEYSTR" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="10" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fbe7c18e-4cfd-40d6-9ae3-26bf6748d5f6">
+            <field Id="81da4771-1032-45c1-b353-5343c45a3975" name="FISTARIH" columnType="DateTime" persistent="FISTARIH" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="1f5a04e8-67bc-478f-89e9-812b1b48dde3">
+            <field Id="482814cc-e152-4b1a-9736-90b85e205748" name="FISNO" columnType="Int32" persistent="FISNO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ce8684c9-ca93-4d5e-9707-734db0460c0f">
+            <field Id="769cda11-67f5-4b80-8dcd-ab038571706f" name="FISACIKLAMA" persistent="FISACIKLAMA" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="60" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ad801bc1-bcf5-4057-abed-d7f9e8cff3e4">
+            <field Id="90b90377-5359-445d-9c9d-1ac45e9550ad" name="FISTURU" columnType="Char" persistent="FISTURU" virtualColumnType="Char" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ed696236-a3e1-4b3b-9dbb-07fe1c3cdaef">
+            <field Id="cad0dfbe-02b8-4445-9d27-d853a08a35ed" name="FISNTLK" persistent="FISNTLK" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="3" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="309a74b4-9f53-4b78-97c4-7f259f34de1f">
+            <field Id="cbec87ec-d5cb-4fb7-b644-f2e765403c41" name="BTOPLAM" columnType="Decimal" persistent="BTOPLAM" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0605568d-b88c-42c9-9c98-53c6c820d65b">
+            <field Id="63a7af98-850b-4e13-9d6a-e84d86cb1767" name="ATOPLAM" columnType="Decimal" persistent="ATOPLAM" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c2212921-8ebc-4ac3-bdd9-b5c91d1651e6">
+            <field Id="6ddd06fd-2ac3-43be-816f-4f4427d3aa9d" name="YEVMIYENO" columnType="Int32" persistent="YEVMIYENO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="a1b5cb2f-ef63-4d97-abca-4dd246084cf1">
+            <field Id="15203a25-a287-4ddb-89cf-ce67d309d271" name="ENTEGRENO" columnType="Int32" persistent="ENTEGRENO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6589ce03-a7ef-4481-8d4a-7a388ee9dd53">
+            <field Id="f7bb61dd-82ef-4fbd-a3c6-d62236f66e0f" name="FISKAPA" columnType="Int16" persistent="FISKAPA" virtualColumnType="Int16" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8b687ba8-db2c-4c20-8b4c-18b8119f0bc0">
+            <field Id="af8744df-4c02-42cf-98a9-1af55665c7ce" name="KPERSONEL" persistent="KPERSONEL" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="30" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3fc6ef52-8db9-43b1-bf91-62b07129143f">
+            <field Id="f7c34719-cbf6-4d36-a6f8-0a8ec6ef1fa0" name="KTARIHI" columnType="DateTime" persistent="KTARIHI" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="4d88b356-aa6b-4c72-9d4b-a556c016c035">
+            <index Id="b7cce576-b5d6-4208-8668-701d7649968f" name="MFB_KEYTARIH">
+              <fieldsInIndex>
+                <indexReferencesFields Id="ac39edda-6acb-4bda-8780-d6c51cf32d42">
+                  <fieldMoniker Id="81da4771-1032-45c1-b353-5343c45a3975" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+          <xpObjectHasIndexes Id="e6456dea-b82e-42f7-8828-46d7bef5c19b">
+            <index Id="cc1dfd05-70fa-4da8-bb61-509b4c655bd1" name="UQ__MFISBAS__3E462A7CEC6BD63C" unique="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="b1eb9a4e-2529-4db1-bc0a-fdd6a07bc508">
+                  <fieldMoniker Id="b82d0f27-7152-4e37-89a8-e2dd30780cfc" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="5fd3fed0-31b8-4006-8a52-f9ca9c1ae640">
+      <xpObject Id="e3bf97cd-5273-481f-8a57-fec4aee0b209" name="MFISDET" baseClass="XPLiteObject" userFileName="MFISDET" designerFileName="MFISDET.Designer" className="MFISDET" virtualBaseClass="XPLiteObject" persistent="MFISDET" virtualName="MFISDET">
+        <fields>
+          <generalXpObjectHasFields Id="49fcc129-4b09-48ba-921e-7c42b769464a">
+            <field Id="d1afb119-ad93-4700-8ba9-1ad998f2ceae" name="IDNO" columnType="Int32" persistent="IDNO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="411d7146-8983-47d0-a76e-595c59caffd0">
+            <field Id="ab97d601-efdf-4e50-8aee-acc769cfb97d" name="DETAYIDNO" columnType="Int32" persistent="DETAYIDNO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2d353246-3e02-437f-852e-d01ed967b8cb">
+            <field Id="a05e687b-a279-41a6-b6d8-9c90de1a9712" name="HESAPKODU" persistent="HESAPKODU" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="18" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8a7af31c-6765-4ce5-bad2-92ea281fbe5a">
+            <field Id="c10eae81-4b5c-44ca-896e-d3f84ada6d08" name="FISACIKLAMA" persistent="FISACIKLAMA" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="88b9584d-4d94-40be-b01a-2756eb9ced3c">
+            <field Id="0331761f-5adf-4501-a059-6746767d322d" name="TLBORC" columnType="Decimal" persistent="TLBORC" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="6d6d3925-aefa-46f2-95a0-15d43aa74539">
+            <field Id="538e53d7-61ce-405b-aba1-84d957c527f1" name="TLALACAK" columnType="Decimal" persistent="TLALACAK" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="e6ac8ccd-3655-4909-b5f0-fcfc99eb5a29">
+            <field Id="efe6ad8e-be6d-4c46-806f-0f5271910d9d" name="ALTBIRIMBORC" columnType="Decimal" persistent="ALTBIRIMBORC" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="9405559b-df81-4d2d-a8f2-ea887a941a50">
+            <field Id="3202e823-df2b-4108-b5c8-8b2ee1e9e3ff" name="ALTBIRIMALACAK" columnType="Decimal" persistent="ALTBIRIMALACAK" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="74926709-77de-4e3f-ab24-dc11029af5a4">
+            <field Id="74c04b43-0879-4fa8-94c2-e94cea112ff3" name="DOVIZBORC" columnType="Decimal" persistent="DOVIZBORC" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="dbf336eb-8dd7-4704-add6-e6cc24d43e69">
+            <field Id="f92c01b4-81e5-4e94-9aa8-14064b328365" name="DOVIZALACAK" columnType="Decimal" persistent="DOVIZALACAK" virtualColumnType="Decimal" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="2fa02c6b-2318-4a11-a491-bc2a9730edd7">
+            <field Id="b214e60d-a36e-4212-b181-1d444d8efe79" name="BORCALACAK" columnType="Char" persistent="BORCALACAK" virtualColumnType="Char" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="43380229-5144-415d-9b59-5582126ddfe1">
+            <field Id="73a55b9a-c230-4555-b60d-42cdb02ffda8" name="BELGETIPI" persistent="BELGETIPI" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="4ea09d1f-71ba-4b29-9816-c116a1d614a5">
+            <field Id="787dbeae-667c-4eaa-91b3-955b831add02" name="BELGENO" persistent="BELGENO" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="fa0c266b-0764-45b4-aa26-7fa5728bf963">
+            <field Id="15a77107-ddc6-47e6-9737-0b720b40f218" name="BELGETARIHI" columnType="DateTime" persistent="BELGETARIHI" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="eefda140-6c81-4e79-b0cd-40738daf4b75">
+            <field Id="46f7f17f-f4e4-4d99-8bbc-a5b050829e37" name="BELGEACIKLAMASI" persistent="BELGEACIKLAMASI" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="50" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="aa205ec2-b2ac-43ba-a522-fa8fca9ea89c">
+            <field Id="ad447e42-f8aa-41ee-b6dc-552b3b500ff1" name="KPERSONEL" persistent="KPERSONEL" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="30" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="8331fdd0-1c5c-4cd1-ba52-402aea0a9371">
+            <field Id="0327df36-f35e-4b20-84e6-b1079998b74f" name="KTARIHI" columnType="DateTime" persistent="KTARIHI" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5e98361e-5c8d-487d-bb2d-35b5113cb328">
+            <field Id="131c29bf-cff3-408b-9e46-8e7c5021587f" name="BELGEACIKLAMASI2" persistent="BELGEACIKLAMASI2" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="221929ee-b799-41ee-8e1e-6ea006dc5b1c">
+            <compositeField Id="a5a7f645-7111-42f3-86e7-3dd02191e21a" name="CompoundKey1" columnType="Unknown" key="true" generateProperties="true">
+              <fieldsInComposite>
+                <compositeFieldReferencesFieldsInComposite Id="e35a12e0-feab-45ec-945d-ef3309f6bd85">
+                  <fieldMoniker Id="d1afb119-ad93-4700-8ba9-1ad998f2ceae" />
+                </compositeFieldReferencesFieldsInComposite>
+                <compositeFieldReferencesFieldsInComposite Id="139acc8d-da00-4efc-a9ff-36cf95c82312">
+                  <fieldMoniker Id="ab97d601-efdf-4e50-8aee-acc769cfb97d" />
+                </compositeFieldReferencesFieldsInComposite>
+              </fieldsInComposite>
+            </compositeField>
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="33cba3a6-20e6-4215-a807-03654d006864">
+            <index Id="03ea1cf2-1639-4ca4-a720-1a376a86725d" name="MFD_KYHSKOD">
+              <fieldsInIndex>
+                <indexReferencesFields Id="1e579b6d-cdd8-4dfc-9c36-0ada221db675">
+                  <fieldMoniker Id="a05e687b-a279-41a6-b6d8-9c90de1a9712" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="6470c291-00a3-44ac-9a75-47e6a7adf26a">
+      <xpObject Id="54355255-80f4-4e33-9fa8-503932c101df" name="TNMSZMUHASEBEKODU" baseClass="XPLiteObject" userFileName="TNMSZMUHASEBEKODU" designerFileName="TNMSZMUHASEBEKODU.Designer" className="TNMSZMUHASEBEKODU" virtualBaseClass="XPLiteObject" persistent="TNMSZMUHASEBEKODU" nonPersistent="true" virtualName="TNMSZMUHASEBEKODU" isView="true">
+        <fields>
+          <generalXpObjectHasFields Id="7de70934-4f18-40d9-bf20-72fa06e22fc1">
+            <field Id="f728a757-b73b-4ecf-9f99-2d98fd216059" name="IDNO" columnType="Int32" persistent="IDNO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="b7e6076f-61ea-44e5-8c27-08a8dd2e60c8">
+            <field Id="251d5eec-c77d-4abc-b362-5db48505b56c" name="HESAPKODU" persistent="HESAPKODU" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="18" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c87e0faf-6847-458a-970a-81d1a173c472">
+            <field Id="928f57cb-639e-4356-ba97-fd2b0ed17562" name="FISTARIH" columnType="DateTime" persistent="FISTARIH" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="96a076e0-ffe6-4459-be00-6608444db611">
+            <field Id="b452f3eb-626a-4fa8-b773-de25e731b78a" name="FISNO" columnType="Int32" persistent="FISNO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="d73c69a8-661f-49ca-a2ce-dcc278706f31">
+            <field Id="fbe26b5f-91da-46c8-95aa-d7c4e2e2760d" name="FISNTLK" persistent="FISNTLK" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="3" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="69ae21cf-c15d-4030-81b4-28468b6fd4ad">
+            <field Id="7941cd0d-4a8f-438f-b046-ca9703bc0ba6" name="FISACIKLAMA" persistent="FISACIKLAMA" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="60" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="cf8756ca-39b8-4e3f-adfe-082ea2de1830">
+      <xpObject Id="9e4ab8bd-b2a4-4b43-85db-3e220eea54ec" name="ZDATLST" baseClass="XPLiteObject" userFileName="ZDATLST" designerFileName="ZDATLST.Designer" className="ZDATLST" virtualBaseClass="XPLiteObject" persistent="ZDATLST" virtualName="ZDATLST">
+        <fields>
+          <generalXpObjectHasFields Id="fa7ad04d-175d-4865-a88e-d4347a701932">
+            <field Id="7cb1fac0-e214-4b9b-a7a9-d0102533578c" name="KOD" persistent="KOD" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="5" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cf14ada5-10ef-4faf-9870-44b3931f5387">
+            <field Id="9c242b80-7b1a-4b38-a27c-b8650a53c90a" name="AD" persistent="AD" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="60" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="7734e381-7def-4779-af0e-e5547b0aaf98">
+            <field Id="9ff4ef2a-6023-416e-985e-479f45134545" name="ACK" persistent="ACK" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="60" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="c5dde202-238f-466e-960c-ec54bcbf8bda">
+            <field Id="94a33918-9972-498c-b549-0fa56a93357f" name="CINS" persistent="CINS" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="ba396f95-aab6-4248-a536-2c5273af2189">
+            <field Id="3c17e144-5498-4a02-adef-94aa72e5880e" name="UZUNLUK" columnType="Int16" persistent="UZUNLUK" virtualColumnType="Int16" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="5a271745-4018-4b15-91d2-cc8e1f724726">
+            <field Id="7ffc0b81-c9fa-4510-8793-619104fab5a4" name="NO" columnType="Int16" persistent="NO" virtualColumnType="Int16" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="75fd1a86-a38f-451a-9147-5da1292c8df8">
+            <compositeField Id="bb477b28-999f-422e-842a-b7c1944b9255" name="CompoundKey1" columnType="Unknown" key="true" generateProperties="true">
+              <fieldsInComposite>
+                <compositeFieldReferencesFieldsInComposite Id="1f2cf964-ae55-4527-aef0-fb4d04ee1bba">
+                  <fieldMoniker Id="7cb1fac0-e214-4b9b-a7a9-d0102533578c" />
+                </compositeFieldReferencesFieldsInComposite>
+                <compositeFieldReferencesFieldsInComposite Id="35077ec8-1de3-472d-9449-d2d60c303ae9">
+                  <fieldMoniker Id="9c242b80-7b1a-4b38-a27c-b8650a53c90a" />
+                </compositeFieldReferencesFieldsInComposite>
+              </fieldsInComposite>
+            </compositeField>
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="095aebd7-6454-4d35-8013-c3955f2349f1">
+      <xpObject Id="d9860a10-dbcd-4ab7-bdc2-59e65cde7c06" name="ZKILIT" baseClass="XPLiteObject" userFileName="ZKILIT" designerFileName="ZKILIT.Designer" className="ZKILIT" virtualBaseClass="XPLiteObject" persistent="ZKILIT" virtualName="ZKILIT">
+        <fields>
+          <generalXpObjectHasFields Id="9ddb7f6c-5a07-4c73-a412-931d44695ec0">
+            <field Id="75a74060-5b13-40d4-84d9-aff71d39f664" name="IDNO" columnType="Int32" persistent="IDNO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="0be219b2-a3fd-44f3-8594-4c8e7b88b580">
+            <field Id="c7fbc32b-6dc7-4d7f-8931-f46d4ba07daf" name="KAYITTURU" persistent="KAYITTURU" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="5" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="df158337-267b-4a11-b2bc-bc698e42400d">
+            <field Id="5619790c-130e-4d90-bcf7-a3d3672c478c" name="IPNO" persistent="IPNO" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="cf970e3a-c561-41ef-97a8-48f2db41a477">
+            <field Id="b0b9a428-228d-4d18-a559-e32555147688" name="KULLANICI" persistent="KULLANICI" virtualColumnType="String" delayedUpdateModifiedOnly="false" size="20" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="3f0a30bd-f7ab-45df-bd20-25cf833556d2">
+            <field Id="c894e935-6ca7-4019-af3b-3c1092e0d6b1" name="GDATE" columnType="DateTime" persistent="GDATE" virtualColumnType="DateTime" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="606d2069-95f5-42d3-99cb-6df708c22822">
+            <compositeField Id="da9a3097-ec25-4543-a918-fb4b6392b636" name="CompoundKey1" columnType="Unknown" key="true" generateProperties="true">
+              <fieldsInComposite>
+                <compositeFieldReferencesFieldsInComposite Id="cb86b042-3ed5-4a25-ab8c-4e8a0deeb5bf">
+                  <fieldMoniker Id="75a74060-5b13-40d4-84d9-aff71d39f664" />
+                </compositeFieldReferencesFieldsInComposite>
+                <compositeFieldReferencesFieldsInComposite Id="ec8e9a78-5010-4f0e-93bc-49a6087f82b8">
+                  <fieldMoniker Id="c7fbc32b-6dc7-4d7f-8931-f46d4ba07daf" />
+                </compositeFieldReferencesFieldsInComposite>
+              </fieldsInComposite>
+            </compositeField>
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="2bf6de08-3248-4411-8b89-77102a8e03a4">
+      <xpObject Id="d118cb0f-5ac9-4b7d-97c3-0df18c56a3d0" name="ZNUMARA" baseClass="XPLiteObject" userFileName="ZNUMARA" designerFileName="ZNUMARA.Designer" className="ZNUMARA" virtualBaseClass="XPLiteObject" persistent="ZNUMARA" virtualName="ZNUMARA">
+        <fields>
+          <generalXpObjectHasFields Id="e6780b8b-ce3f-48d7-862b-be702c37ee9d">
+            <field Id="fdf2be03-ab0e-467b-bc05-11015043a5ef" name="IDNO" columnType="Int32" key="true" persistent="IDNO" virtualColumnType="Int32" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+    <dataBaseObjectModelHasClasses Id="3bbb81cb-69fc-4c14-b762-04ac5e597c1f">
+      <xpObject Id="5a076a8e-5f33-480f-97bb-5dfd49d399e9" name="Ben1" baseClass="XPObject" userFileName="Ben" designerFileName="Ben.Designer" className="Ben1" persistent="Ben" virtualName="Ben1">
+        <fields>
+          <generalXpObjectHasFields Id="31c8f90f-fd62-4d9a-8a90-a0a8d7dda867">
+            <field Id="4fe78019-d993-4646-9912-767e0eb3cda8" name="RecID" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="10c54892-0ca3-438e-be51-6f63d1326e6d">
+            <field Id="53db3ad0-12aa-4576-adc1-c3e053bcdd21" name="Code" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+          <generalXpObjectHasFields Id="62371962-968d-4055-8b03-8814c14c6201">
+            <field Id="ba67f27c-274d-4a69-bfff-02bbbcd08701" name="Name" virtualColumnType="String" delayedUpdateModifiedOnly="false" />
+          </generalXpObjectHasFields>
+        </fields>
+        <indexes>
+          <xpObjectHasIndexes Id="b557e48e-d2a7-4ebb-b924-3455b547cf96">
+            <index Id="d63b084b-a3f4-493c-a7eb-5d1de14dcf5c" name="Index1" unique="true" includeGCRecord="true" includeOptimisticLockField="true">
+              <fieldsInIndex>
+                <indexReferencesFields Id="a539c745-6f54-4d6b-94cb-52e67022bb97">
+                  <fieldMoniker Id="4fe78019-d993-4646-9912-767e0eb3cda8" />
+                </indexReferencesFields>
+              </fieldsInIndex>
+            </index>
+          </xpObjectHasIndexes>
+        </indexes>
+      </xpObject>
+    </dataBaseObjectModelHasClasses>
+  </classes>
+</dataBaseObjectModel>

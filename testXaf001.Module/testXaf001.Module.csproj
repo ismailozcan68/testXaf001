@@ -140,7 +140,43 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessObjects\DomainObject1.cs" />
+    <Compile Include="BusinessObjects\CustomerDetail.cs" />
+    <Compile Include="BusinessObjects\Customer.cs" />
+    <Compile Include="BusinessObjects\CustTab.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\Ben.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\Ben.Designer.cs">
+      <DependentUpon>Ben.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModel1Code\ConnectionHelper.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\MBELGETIPI.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\MBELGETIPI.Designer.cs">
+      <DependentUpon>MBELGETIPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModel1Code\MFISBAS.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\MFISBAS.Designer.cs">
+      <DependentUpon>MFISBAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModel1Code\MFISDET.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\MFISDET.Designer.cs">
+      <DependentUpon>MFISDET.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModel1Code\StoredProcHelper.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\TNMSZMUHASEBEKODU.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\TNMSZMUHASEBEKODU.Designer.cs">
+      <DependentUpon>TNMSZMUHASEBEKODU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModel1Code\ZDATLST.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\ZDATLST.Designer.cs">
+      <DependentUpon>ZDATLST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModel1Code\ZKILIT.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\ZKILIT.Designer.cs">
+      <DependentUpon>ZKILIT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\ORMDataModel1Code\ZNUMARA.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel1Code\ZNUMARA.Designer.cs">
+      <DependentUpon>ZNUMARA.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
@@ -156,8 +192,14 @@
       <SubType>Designer</SubType>
       <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BusinessObjects\ORMDataModel1.xpo" />
+    <None Include="BusinessObjects\ORMDataModel1.xpo.diagram">
+      <DependentUpon>ORMDataModel1.xpo</DependentUpon>
+    </None>
+    <None Include="ClassDiagram1.cd" />
     <None Include="DatabaseUpdate\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
